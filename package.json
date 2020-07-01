@@ -4,6 +4,8 @@
   "description": "Backend project at Dev.f batch 42",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint \"**/*.js\"",
+    "lint-fix": "eslint \"**/*.js\" --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -20,5 +22,10 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.20",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
   }
 }
